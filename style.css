@@ -1,0 +1,26 @@
+body{
+    margin : 0px;
+    background-color: #808080;
+}
+
+.wrapper{
+    display:flex;
+    gap: 20px;
+}
+
+.gridContainer {
+    display: grid;
+    background-color: #808080;
+}
+
+.buttonsContainer{
+    align-self: center;
+}
+
+
+.anItem1{
+    grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
