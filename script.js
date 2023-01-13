@@ -25,7 +25,7 @@ createGrid();
 
 const button = document.createElement('button');
 button.setAttribute('style', 
-'background-color:#4CAF50; border:none; color: white; font-size: 20px; font-weight: bold; padding: 5px 30px;');
+'background-color:#378805; border:none; color: white; font-size: 20px; font-weight: bold; padding: 5px 30px;');
 button.textContent = 'Reset and Resize';
 
 button.addEventListener('click', () =>{
@@ -40,6 +40,12 @@ button.addEventListener('click', () =>{
         });
         createGrid();
     }
+});
+button.addEventListener('mouseenter', () =>{
+    button.style.backgroundColor = "#4CAF51";
+});
+button.addEventListener('mouseleave', () =>{
+    button.style.backgroundColor = "#378805";
 });
 const buttons = document.querySelector('.buttonsContainer');
 buttons.appendChild(button);
