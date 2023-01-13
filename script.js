@@ -8,9 +8,6 @@ let defaultColor = 'white';
 let mouseOverColor = 'black';
 let paintColor = 'cyan';
 
-//container.style.gridTemplateColumns = `repeat(${size}, ${pixelsize}px)`;
-//container.style.gridTemplateRows = `repeat(${size}, ${pixelsize}px)`;
-
 function createGrid(){
     container.style.gridTemplateColumns = `repeat(${size}, ${pixelsize}px)`;
     container.style.gridTemplateRows = `repeat(${size}, ${pixelsize}px)`;
@@ -21,9 +18,6 @@ function createGrid(){
         newDiv.addEventListener('mouseenter', function(e){
             e.target.style.background = randomRGB();
         });
-        //newDiv.addEventListener('mouseleave', function(e){
-            //e.target.style.background = randomRGB();
-        //});
         container.appendChild(newDiv);
     }
 }
@@ -49,7 +43,6 @@ button.addEventListener('click', () =>{
 });
 const buttons = document.querySelector('.buttonsContainer');
 buttons.appendChild(button);
-
 
 function randomRGB(){
     const r = Math.floor(Math.random() * 256);
